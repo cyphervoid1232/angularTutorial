@@ -1,0 +1,29 @@
+<!-- <p (click)="onClick($event)">
+  heroes works!
+  {{hero.title}}
+  {{hero.sex}}
+  {{hero.isDie}}
+</p>
+<div>
+  <label>name:
+    <input [(ngModel)]="hero.title" placeholder="name">
+  </label>
+</div> -->
+
+<h2>My Heroes</h2>
+<div *ngIf="display">
+  <ul>
+    <li *ngFor="let hero of heroes" [class.selected]="hero == selectedHero" (click)="onSelectedHero(hero)">
+      <a routerLink="detail/{{hero.id}}">
+        <span>{{hero.title}}</span>
+      </a>
+      <button (click)="deleteHero(hero)">X</button>
+      <button (click)="editHero(hero)">edit</button>
+    </li>
+  </ul>
+</div>
+<button (click)="addHero()">Add Hero</button>
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<div *ngIf="selectedHero">
+  {{selectedHero.title}} {{selectedHero.sex}} {{selectedHero.isDie}}
+</div> -->
