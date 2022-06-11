@@ -16,7 +16,6 @@ export class HeroService {
 
   getHero(id: string) {
     // let doc = this.db.doc(path)
-    console.log("Awdawdaw")
     return this.db.doc(`heroe/${id}`).snapshotChanges()
   }
 
