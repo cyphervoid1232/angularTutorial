@@ -11,7 +11,6 @@ export class HeroService {
   ) { }
 
   listHeroes(filter?: QueryFn) {
-    console.log("print")
     return this.db.collection('heroe', filter).snapshotChanges()
   }
 
