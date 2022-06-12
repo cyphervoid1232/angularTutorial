@@ -32,7 +32,7 @@ export class HeroDetailComponent implements OnInit {
         ...snapshot.payload.data()
       }
     })
-    console.log("test 333")
+    console.log("test 555")
   }
 
   clickOnItem() {
