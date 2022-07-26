@@ -23,9 +23,7 @@ export class HeroDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log("xxx")
     const id = this.route.snapshot.paramMap.get('id');
-    console.log("test 888")
     this.heroService.getHero(id).subscribe(snapshot => {
       this.hero = {
         id: snapshot.payload.id,
