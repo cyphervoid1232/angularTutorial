@@ -36,6 +36,7 @@ export class HeroDetailComponent implements OnInit {
     console.log("ad133")
     console.log("ad144")
     console.log("ad144")
+    console.log("ad144")
   }
 
   clickOnItem() {
