@@ -23,6 +23,7 @@ export class HeroDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log("tetsetset")
     const id = this.route.snapshot.paramMap.get('id');
     this.heroService.getHero(id).subscribe(snapshot => {
       this.hero = {
@@ -30,7 +31,6 @@ export class HeroDetailComponent implements OnInit {
         ...snapshot.payload.data()
       }
     })
-    console.log("test 888")
   }
 
   clickOnItem() {
