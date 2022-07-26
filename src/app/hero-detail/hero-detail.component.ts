@@ -31,6 +31,8 @@ export class HeroDetailComponent implements OnInit {
         ...snapshot.payload.data()
       }
     })
+
+    console.log("ad111")
   }
 
   clickOnItem() {
