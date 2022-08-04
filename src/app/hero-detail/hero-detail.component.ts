@@ -34,8 +34,8 @@ export class HeroDetailComponent implements OnInit {
   }
 
   clickOnItem() {
-    // this.testOutput1.emit(1)
     this.hero.sex++
+    console.log("awawd")
   }
 
 }
