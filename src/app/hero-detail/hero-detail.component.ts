@@ -29,6 +29,7 @@ export class HeroDetailComponent implements OnInit {
         id: snapshot.payload.id,
         ...snapshot.payload.data()
       }
+      console.log("Awdawd")
     })
 
   }
