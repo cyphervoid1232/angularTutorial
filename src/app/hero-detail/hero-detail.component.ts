@@ -35,7 +35,6 @@ export class HeroDetailComponent implements OnInit {
   }
 
   clickOnItem() {
-    console.log("awdawd")
     this.hero.sex++
   }
 
