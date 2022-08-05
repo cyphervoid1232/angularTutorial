@@ -31,7 +31,6 @@ export class HeroDetailComponent implements OnInit {
       }
     })
 
-    console.log("awdawdaw")
   }
 
   clickOnItem() {
